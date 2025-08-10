@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Contato</title>
+
+    <style>
+        /* Estilos gerais para a página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f2f5;
+            /* Usando Flexbox para centralizar o formulário na tela (um conceito um pouco mais avançado, mas ótimo para apresentação) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container do formulário */
+        .formulario-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        /* Estilo para o título do formulário */
+        .formulario-container h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Agrupa cada label e input para melhor controle de espaçamento */
+        .grupo-input {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para as etiquetas (labels) */
+        label {
+            display: block; /* Faz com que o label ocupe uma linha inteira, colocando o input abaixo */
+            color: #555;
+            margin-bottom: 8px; /* Espaço entre o label e o campo de input */
+            font-weight: bold;
+        }
+
+        /* Estilo geral para os campos de input e textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%; /* Faz os campos ocuparem toda a largura do container */
+            padding: 12px; /* Espaçamento interno para o texto não colar nas bordas */
+            border: 1px solid #ccc; /* Borda sutil */
+            border-radius: 4px; /* Cantos levemente arredondados */
+            box-sizing: border-box; /* Garante que o padding não altere a largura final do elemento */
+        }
+        
+        /* Estilo específico para a área de texto, permitindo redimensionamento vertical */
+        textarea {
+            height: 120px;
+            resize: vertical; 
+        }
+
+        /* Estilo para o botão de envio */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF; /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto do botão */
+            border: none; /* Remove a borda padrão */
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer; /* Muda o cursor para uma "mãozinha" ao passar o mouse */
+        }
+        
+        /* Efeito visual simples para quando o mouse passa por cima do botão */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="formulario-container">
+        <h2>Entre em Contato</h2>
+
+        <form action="#">
+            
+            <div class="grupo-input">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="mensagem">Sua Mensagem</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar Mensagem</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
