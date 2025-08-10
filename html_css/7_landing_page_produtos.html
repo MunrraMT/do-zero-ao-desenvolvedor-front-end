@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Produto Incrível - A Solução que Você Esperava</title>
+
+    <style>
+      /* Reset e Estilos Globais Iniciais */
+      body,
+      h1,
+      h2,
+      p,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Estilos do Cabeçalho (Parte da primeira dobra) */
+      .site-header {
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Fundo semi-transparente */
+        padding: 15px 0;
+        position: fixed;
+        /* Fixa o cabeçalho no topo */
+        width: 100%;
+        z-index: 1000;
+        /* Garante que o header fique sobre outros elementos */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #005a8d;
+      }
+
+      .main-nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .main-nav li {
+        margin-left: 25px;
+      }
+
+      .main-nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+
+      /* Estilos da Seção Hero (Parte da primeira dobra) */
+      .hero-section {
+        /* Imagem de fundo */
+        background-image: linear-gradient(rgba(0, 90, 141, 0.7), rgba(0, 90, 141, 0.7)), url('https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=2070&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+
+        /* Usando flexbox para centralizar o conteúdo verticalmente */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        /* Ocupa toda a altura da tela */
+        padding: 0 20px;
+      }
+
+      .hero-content h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .hero-content p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-button {
+        /* CTA = Call to Action */
+        display: inline-block;
+        background-color: #ffc107;
+        /* Amarelo vibrante */
+        color: #333;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #ffca2c;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="container header-container">
+        <p class="logo">ProdutoX</p>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#funcionalidades">Funcionalidades</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#">Preços</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Transforme sua Rotina com o ProdutoX</h1>
+          <p>A solução definitiva para organizar suas tarefas, aumentar sua produtividade e alcançar seus objetivos com
+            facilidade.</p>
+          <a href="#" class="cta-button">COMECE AGORA GRÁTIS</a>
+        </div>
+      </section>
+
+      <section id="funcionalidades" class="features-section">
+        <div class="container">
+          <h2>Tudo que Você Precisa em um só Lugar</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <h3>Organização Inteligente</h3>
+              <p>Classifique suas tarefas com etiquetas, prioridades e datas de vencimento.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Colaboração em Tempo Real</h3>
+              <p>Convide sua equipe, delegue tarefas e acompanhe o progresso de todos.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Relatórios Detalhados</h3>
+              <p>Visualize sua produtividade com gráficos e relatórios fáceis de entender.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos clientes dizem</h2>
+          <div class="testimonial-item">
+            <blockquote>"O ProdutoX mudou a forma como minha equipe trabalha. Estamos mais organizados e eficientes do
+              que nunca. Recomendo fortemente!"</blockquote>
+            <cite>- Joana Mendes, CEO da InovaTech</cite>
+          </div>
+          <div class="testimonial-item">
+            <blockquote>"Finalmente encontrei uma ferramenta que é ao mesmo tempo poderosa e simples de usar. Minha
+              produtividade dobrou."</blockquote>
+            <cite>- Carlos Souza, Desenvolvedor Freelancer</cite>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 ProdutoX. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+
+    <style>
+      /* Estilos da Seção de Funcionalidades */
+      .features-section {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+      }
+
+      .features-section h2 {
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 36px;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .feature-item {
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature-item h3 {
+        margin-bottom: 15px;
+        color: #005a8d;
+      }
+
+      /* Estilos da Seção de Depoimentos */
+      .testimonials-section {
+        padding: 80px 0;
+        background-color: #eaf6ff;
+        /* Azul bem claro */
+      }
+
+      .testimonials-section h2 {
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 36px;
+      }
+
+      .testimonial-item {
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        border-left: 5px solid #005a8d;
+      }
+
+      .testimonial-item blockquote {
+        margin: 0 0 15px 0;
+        font-style: italic;
+        font-size: 18px;
+      }
+
+      .testimonial-item cite {
+        font-weight: bold;
+        color: #555;
+      }
+
+      /* Estilos do Rodapé */
+      .site-footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+
+  </body>
+
+</html>
