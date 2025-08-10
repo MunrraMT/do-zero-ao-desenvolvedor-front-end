@@ -1,75 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Cartão de Perfil Pessoal</title>
 
-    <style>
-        /* Estilo para o corpo da página, para centralizar o cartão */
-        body {
-            background-color: #e0e0e0;
-            font-family: sans-serif; /* Uma fonte simples para melhor aparência */
-        }
+    <head>
+        <meta charset="UTF-8">
+        <title>Cartão de Perfil Pessoal</title>
 
-        /* O container principal do nosso cartão. Usamos uma classe para identificá-lo. */
-        .cartao-perfil {
-            width: 300px; /* Largura fixa para o cartão */
-            background-color: #ffffff; /* Fundo branco para o cartão */
-            margin: 50px auto; /* Centraliza o cartão na página (50px de margem em cima/embaixo, auto nas laterais) */
-            border: 1px solid #cccccc; /* Borda sutil ao redor do cartão */
-            text-align: center; /* Centraliza todo o texto dentro do cartão */
-            padding: 20px; /* Espaçamento interno para o conteúdo não ficar colado nas bordas */
-        }
+        <style>
+            /* Estilo para o corpo da página, para centralizar o cartão */
+            body {
+                background-color: #e0e0e0;
+                font-family: sans-serif;
+                /* Uma fonte simples para melhor aparência */
+            }
 
-        /* Estilizando a imagem de perfil */
-        .imagem-perfil {
-            width: 150px; /* Largura da imagem */
-            height: 150px; /* Altura da imagem */
-            border-radius: 50%; /* Transforma a imagem quadrada em um círculo perfeito */
-            border: 5px solid #007BFF; /* Adiciona uma borda colorida ao redor da foto */
-            margin-bottom: 15px; /* Espaço entre a foto e o nome */
-        }
+            /* O container principal do nosso cartão. Usamos uma classe para identificá-lo. */
+            .cartao-perfil {
+                width: 300px;
+                /* Largura fixa para o cartão */
+                background-color: #ffffff;
+                /* Fundo branco para o cartão */
+                margin: 50px auto;
+                /* Centraliza o cartão na página (50px de margem em cima/embaixo, auto nas laterais) */
+                border: 1px solid #cccccc;
+                /* Borda sutil ao redor do cartão */
+                text-align: center;
+                /* Centraliza todo o texto dentro do cartão */
+                padding: 20px;
+                /* Espaçamento interno para o conteúdo não ficar colado nas bordas */
+            }
 
-        /* Estilizando a lista de redes sociais */
-        .redes-sociais {
-            list-style-type: none; /* Remove os marcadores (bolinhas) da lista */
-            padding: 0; /* Remove o espaçamento padrão da lista */
-            margin-top: 20px; /* Espaço acima da lista de links */
-        }
+            /* Estilizando a imagem de perfil */
+            .imagem-perfil {
+                width: 150px;
+                /* Largura da imagem */
+                height: 150px;
+                /* Altura da imagem */
+                border-radius: 50%;
+                /* Transforma a imagem quadrada em um círculo perfeito */
+                border: 5px solid #007BFF;
+                /* Adiciona uma borda colorida ao redor da foto */
+                margin-bottom: 15px;
+                /* Espaço entre a foto e o nome */
+            }
 
-        /* Estilizando cada item da lista */
-        .redes-sociais li {
-            display: inline-block; /* Faz os itens da lista ficarem um ao lado do outro */
-            margin: 0 10px; /* Adiciona um espaçamento entre os ícones/links */
-        }
+            /* Estilizando a lista de redes sociais */
+            .redes-sociais {
+                list-style-type: none;
+                /* Remove os marcadores (bolinhas) da lista */
+                padding: 0;
+                /* Remove o espaçamento padrão da lista */
+                margin-top: 20px;
+                /* Espaço acima da lista de links */
+            }
 
-        /* Estilizando os links das redes sociais */
-        .redes-sociais a {
-            color: #007BFF; /* Cor do link */
-            text-decoration: none; /* Remove o sublinhado do link */
-            font-size: 16px; /* Tamanho da fonte para os links */
-        }
+            /* Estilizando cada item da lista */
+            .redes-sociais li {
+                display: inline-block;
+                /* Faz os itens da lista ficarem um ao lado do outro */
+                margin: 0 10px;
+                /* Adiciona um espaçamento entre os ícones/links */
+            }
 
-    </style>
-</head>
-<body>
+            /* Estilizando os links das redes sociais */
+            .redes-sociais a {
+                color: #007BFF;
+                /* Cor do link */
+                text-decoration: none;
+                /* Remove o sublinhado do link */
+                font-size: 16px;
+                /* Tamanho da fonte para os links */
+            }
+        </style>
+    </head>
 
-    <div class="cartao-perfil">
+    <body>
 
-        <img class="imagem-perfil" src="https://i.pravatar.cc/150?img=47" alt="Foto de Perfil de Ana Silva">
+        <div class="cartao-perfil">
 
-        <div id="info-pessoal">
-            <h2 style="margin: 10px 0;">Ana Silva</h2>
-            <p style="color: #555; margin: 0;">Desenvolvedora Front-End</p>
+            <img class="imagem-perfil" src="https://i.pravatar.cc/150?img=47" alt="Foto de Perfil de Ana Silva">
+
+            <div id="info-pessoal">
+                <h2 style="margin: 10px 0;">Ana Silva</h2>
+                <p style="color: #555; margin: 0;">Desenvolvedora Front-End</p>
+            </div>
+
+            <ul class="redes-sociais">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+
         </div>
 
-        <ul class="redes-sociais">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+    </body>
 
-    </div>
-
-</body>
 </html>
