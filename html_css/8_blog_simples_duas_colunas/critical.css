@@ -1,0 +1,55 @@
+/* === CRITICAL.CSS === */
+/* Estilos essenciais para a primeira dobra */
+
+/* Reset Básico e Fontes */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.site-header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.site-header p {
+  margin: 5px 0 0 0;
+  color: #7f8c8d;
+}
+
+/* --- Layout Principal de Duas Colunas com Grid --- */
+.layout-container {
+  display: grid;
+  /* Cria duas colunas: a principal com 2 frações de espaço e a sidebar com 1 fração */
+  grid-template-columns: 2fr 1fr;
+  gap: 30px; /* Espaço entre a área principal e a sidebar */
+}
+
+/* Estilos iniciais para a área de posts e sidebar */
+.main-content {
+  background-color: transparent;
+}
+
+.sidebar {
+  background-color: transparent;
+}
