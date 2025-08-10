@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Galeria com CSS Grid</title>
+
+    <style>
+      /* Estilos Gerais da Página */
+      body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* Container principal para o conteúdo da galeria */
+      .container-galeria {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* Centraliza o container */
+        text-align: center;
+      }
+
+      .container-galeria h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        color: #2c3e50;
+      }
+
+      .container-galeria p {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        color: #7f8c8d;
+      }
+
+      /* --- CONCEITO NOVO: CSS GRID LAYOUT --- */
+      .grid-galeria {
+        /* 1. Ativa o Grid Layout */
+        display: grid;
+
+        /* 2. Define as colunas do grid. 
+               'repeat(auto-fit, minmax(250px, 1fr))' é uma técnica poderosa e responsiva:
+               - repeat(): Repete o padrão.
+               - auto-fit: Cria tantas colunas quanto couberem no espaço disponível.
+               - minmax(250px, 1fr): Cada coluna terá no mínimo 250px, mas poderá crescer para preencher o espaço (1fr = uma fração do espaço livre).
+            */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        /* 3. Define o espaço (vão) entre os itens do grid */
+        grid-gap: 20px;
+      }
+
+      /* Estilo para cada item da galeria */
+      .item-galeria {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        /* Garante que a imagem não "vaze" para fora se for maior */
+
+        /* --- CONCEITO NOVO: TRANSITION --- */
+        /* Prepara o item para uma animação suave ao longo de 0.3 segundos */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      /* Estilo para as imagens dentro dos itens */
+      .item-galeria img {
+        width: 100%;
+        /* Faz a imagem preencher toda a largura do seu container (.item-galeria) */
+        height: 100%;
+        /* Faz a imagem preencher toda a altura */
+        display: block;
+        /* Remove pequenos espaços em branco abaixo da imagem */
+        object-fit: cover;
+        /* Garante que a imagem cubra todo o espaço, cortando o excesso se necessário, sem distorcer. */
+      }
+
+      /* --- CONCEITO NOVO: PSEUDO-CLASSE :hover --- */
+      /* Este estilo será aplicado QUANDO o mouse estiver sobre o .item-galeria */
+      .item-galeria:hover {
+        /* Aumenta levemente o tamanho do item */
+        transform: scale(1.05);
+        /* Aumenta a sombra para dar uma sensação de "elevação" */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Início Container principal -->
+    <div class="container-galeria">
+      <!-- Início título -->
+      <h1>Galeria de Paisagens</h1>
+      <!-- Fim título -->
+
+      <!-- Início subtítulo -->
+      <p>Uma coleção de belas paisagens criadas com o poder do CSS Grid.</p>
+      <!-- Fim subtítulo -->
+
+      <!-- Início galeria -->
+      <div class="grid-galeria">
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/10/500/500" alt="Montanhas com neblina">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/12/500/500" alt="Estrada de terra">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/22/500/500" alt="Cachoeira na floresta">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/24/500/500" alt="Campo de trigo">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/25/500/500" alt="Praia com pedras">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/33/500/500" alt="Pessoa em um cais">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/42/500/500" alt="Árvores refletidas na água">
+        </div>
+        <!-- Fim imagem -->
+
+        <!-- Início imagem -->
+        <div class="item-galeria">
+          <img src="https://picsum.photos/id/106/500/500" alt="Cânion visto de cima">
+        </div>
+        <!-- Fim imagem -->
+      </div>
+      <!-- Fim galeria -->
+    </div>
+    <!-- Fim Container principal -->
+
+  </body>
+
+</html>
